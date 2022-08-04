@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <meta="UTF-8">
     <title>Sample Survey Form Project</title>
   </head>
   <body>
-    <h1 id="title">Sample Survey Form Title</h1>  
-    <p id="description">This is a short description of my sample survey form project.</p>  
+
+    <header>
+      <h1 id="title">Sample Survey Form Title</h1>  
+      <p id="description">This is a short description of my sample survey form project.</p>  
+    </header>
+
     <form id="survey-form" action="https://www.google.com">
       <label id="name-label">
         Enter Your Name:
-        <input id="name" type="text" placeholder="Your Name">
+        <input id="name" type="text" placeholder="Your Name" required>
       </label>
+
       <label id="email-label">
         Enter Your Email:
-        <input id="email" type="email" placeholder="Your Email">
+        <input id="email" type="email" placeholder="Your Email" required>
       </label>
+
+
       <label id="number-label">
-        Enter A Number:
-        <input id="number" type="number" min="13" max="115" placeholder="A Number">
+        Enter A Number (optional):
+        <input id="number" type="number" min="13" max="115" placeholder="42?">
       </label>
-      <label id="dropdown">
+
+      <label>
         How Awesome Is This Sample Survey Form?
-        <select>
+        <select id="dropdown">
             <option value="">
                 (select an option from below)
             </option>
@@ -38,22 +46,37 @@
             </option>
         </select>
       </label>
-      <label>
+
+      <label class="question">
         Why Haven't You Given Me This Job Yet?!
-        <input type="radio" name="radio" value="radio1" checked> I was stunned by this awesome survey form!
-        <input type="radio" name="radio" value="radio2"> Shut up and take my money!!!
       </label>
       <label>
+        <input type="radio" name="radio" value="radio1" checked /> I was stunned by this awesome survey form!
+      </label>
+      <label>
+        <input type="radio" name="radio" value="radio2" /> Shut up and take my money!!!
+      </label>
+
+      <label class="question">
         What Bonus Perks Will You Throw In To Convince Me To Take This Job?
-        <input type="checkbox" value="check1">You can have my office!
-        <input type="checkbox" value="check2">You can have my parking space!
-        <input type="checkbox" value="check3">365 days paid time off!
       </label>
       <label>
-        Any Additional Comments?
-        <textarea placeholder="I like turtles..."></textarea>
+        <input type="checkbox" value="check1" />You can have my office!
       </label>
-      <input type="submit" id="submit" value="Submit">
+      <label>
+        <input type="checkbox" value="check2" />You can have my parking space!
+      </label>
+      <label>
+        <input type="checkbox" value="check3" />365 days paid time off!
+      </label>
+      <label class="question">
+        Any Additional Comments?
+      </label>
+
+      <textarea placeholder="I like turtles..."></textarea>
+
+      <input type="submit" id="submit" value="Submit" />
+
     </form>
   </body>
 </html>

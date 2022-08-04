@@ -1,0 +1,52 @@
+h1{
+    font-size: 36pt;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+p, label, input, select, textarea {
+    font-size: 18pt;
+}
+
+h1, p {
+    text-align: center;
+}
+
+body {
+    background-color: #4a2bFF;
+    color: #FFFFFF;
+}
+
+form {
+    margin-left: 27.5%;
+}
+
+label {
+    font-size: 18pt;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.question {
+    margin-top: 2em;
+}
+
+select {
+    color: #444444;
+    background-color: #CCCCCC;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-bottom: -0.5em;
+}
+
+textarea {
+    display: block;
+    width: 55%;
+    margin-bottom: 2em;
+}
+input[type="submit"] {
+    margin-left: 27.5%;
+}
